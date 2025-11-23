@@ -2,6 +2,7 @@ Modified files
 ---
 
 Boot Splash
+Copyright (c) 2025-present vg2357io
 Copyright (c) 2024 TinyTakinTeller
 Copyright (c) 2017 Andrea Calabró
 

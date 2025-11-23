@@ -38,12 +38,10 @@ static var _snippet_properties: Dictionary = {
 	"textarea_text_color": "#ffffff",
 	# Accept button
 	"accept_button_text": "Accept",
-	"accept_button_bg_color": "#1a1a1a99",
 	"accept_button_bg_hover_color": "#39393999",
 	"accept_button_text_color": "#ffffff",
 	# Cancel button
 	"cancel_button_text": "Cancel",
-	"cancel_button_bg_color": "#1a1a1a99",
 	"cancel_button_bg_hover_color": "#39393999",
 	"cancel_button_text_color": "#ffffff"
 }
@@ -102,16 +100,6 @@ static func set_snippet_theme_from_resource(theme: Theme) -> void:
 		return
 
 	var button_normal_stylebox: StyleBox = theme.get("Button/styles/normal") as StyleBox
-	if button_normal_stylebox != null:
-		var button_bg_color: Color = button_normal_stylebox.get("bg_color") as Color
-		_snippet_properties["accept_button_bg_color"] = "#" + button_bg_color.to_html()
-		_snippet_properties["cancel_button_bg_color"] = "#" + button_bg_color.to_html()
-
-	var button_hover_stylebox: StyleBox = theme.get("Button/styles/hover") as StyleBox
-	if button_hover_stylebox != null:
-		var button_bg_color: Color = button_hover_stylebox.get("bg_color") as Color
-		_snippet_properties["accept_button_bg_hover_color"] = "#" + button_bg_color.to_html()
-		_snippet_properties["cancel_button_bg_hover_color"] = "#" + button_bg_color.to_html()
 
 	var button_font_color: Color = theme.get("Button/colors/font_color") as Color
 	if button_font_color != null:
@@ -119,9 +107,6 @@ static func set_snippet_theme_from_resource(theme: Theme) -> void:
 		_snippet_properties["cancel_button_text_color"] = "#" + button_font_color.to_html()
 
 	var textedit_normal_stylebox: StyleBox = theme.get("TextEdit/styles/normal") as StyleBox
-	if textedit_normal_stylebox != null:
-		var textedit_bg_color: Color = textedit_normal_stylebox.get("bg_color") as Color
-		_snippet_properties["textarea_bg_color"] = "#" + textedit_bg_color.to_html()
 
 	var textedit_font_color: Color = theme.get("TextEdit/colors/font_color") as Color
 	if textedit_font_color != null:
