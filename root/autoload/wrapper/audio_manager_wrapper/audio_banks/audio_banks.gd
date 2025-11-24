@@ -2,6 +2,7 @@ class_name AudioBanks
 extends Node
 ## Define new audio tracks in [_init_resonate_audio_banks] and play them via [AudioManagerWrapper].
 ## [br][br]
+## Final File MIT License Copyright (c) 2025 vg2357io
 ## Original File MIT License Copyright (c) 2024 TinyTakinTeller
 
 const MUSIC_BANK: String = "music"
@@ -34,6 +35,10 @@ func _init_resonate_audio_banks() -> void:
 	sound_tracks.append(_init_sound(AssetReference.CLICK_5, AudioEnum.Sfx.SELECT))
 	sound_tracks.append(_init_sound(AssetReference.MOUSECLICK_1, AudioEnum.Sfx.SELECT_2))
 	sound_tracks.append(_init_sound(AssetReference.MOUSERELEASE_1, AudioEnum.Sfx.CLICK_2))
+	sound_tracks.append(_init_sound(KenneyAssetReference.KENNEY_REMOVAL, AudioEnum.Sfx.KENNEY_REMOVAL))
+	sound_tracks.append(_init_sound(KenneyAssetReference.KENNEY_ROTATE, AudioEnum.Sfx.KENNEY_ROTATE))
+	sound_tracks.append(_init_sound(KenneyAssetReference.KENNEY_TOGGLE, AudioEnum.Sfx.KENNEY_TOGGLE))
+	sound_tracks.append(_init_sound(KenneyAssetReference.KENNEY_PLACEMENT, AudioEnum.Sfx.KENNEY_PLACEMENT))
 	sound_bank.events = sound_tracks
 
 
