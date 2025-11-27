@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Structure" load_steps=3 format=3 uid="uid://37ni0ghieawla"]
+
+[ext_resource type="PackedScene" uid="uid://b62yf5fo8nwp8" path="res://models/present-b-cube.glb" id="1_present_b_cube"]
+[ext_resource type="Script"     uid="uid://b4i7dfy6u3e8w" path="res://scripts/kenney_city_builder/structure.gd" id="2_structure"]
+
+[resource]
+script = ExtResource("2_structure")
+model  = ExtResource("1_present_b_cube")
+price  = 70

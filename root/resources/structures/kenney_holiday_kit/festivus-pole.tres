@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Structure" load_steps=3 format=3 uid="uid://124968i43jylg"]
+
+[ext_resource type="PackedScene" uid="uid://c83uaenkggv2t" path="res://models/festivus-pole.glb" id="1_festivus_pole"]
+[ext_resource type="Script"     uid="uid://b4i7dfy6u3e8w" path="res://scripts/kenney_city_builder/structure.gd" id="2_structure"]
+
+[resource]
+script = ExtResource("2_structure")
+model  = ExtResource("1_festivus_pole")
+price  = 70

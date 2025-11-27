@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Structure" load_steps=3 format=3 uid="uid://3sli7k4vwlo1n"]
+
+[ext_resource type="PackedScene" uid="uid://cevaakrfk4ekm" path="res://models/wreath.glb" id="1_wreath"]
+[ext_resource type="Script"     uid="uid://b4i7dfy6u3e8w" path="res://scripts/kenney_city_builder/structure.gd" id="2_structure"]
+
+[resource]
+script = ExtResource("2_structure")
+model  = ExtResource("1_wreath")
+price  = 70

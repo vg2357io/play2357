@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Structure" load_steps=3 format=3 uid="uid://1sqpn2v7zb8ep"]
+
+[ext_resource type="PackedScene" uid="uid://cjylqeunmx3g7" path="res://models/cabin-roof-snow-corner.glb" id="1_cabin_roof_snow_corner"]
+[ext_resource type="Script"     uid="uid://b4i7dfy6u3e8w" path="res://scripts/kenney_city_builder/structure.gd" id="2_structure"]
+
+[resource]
+script = ExtResource("2_structure")
+model  = ExtResource("1_cabin_roof_snow_corner")
+price  = 70

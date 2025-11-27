@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Structure" load_steps=3 format=3 uid="uid://29vh111sxm0kz"]
+
+[ext_resource type="PackedScene" uid="uid://bow6qw60wfqkv" path="res://models/snowman-hat.glb" id="1_snowman_hat"]
+[ext_resource type="Script"     uid="uid://b4i7dfy6u3e8w" path="res://scripts/kenney_city_builder/structure.gd" id="2_structure"]
+
+[resource]
+script = ExtResource("2_structure")
+model  = ExtResource("1_snowman_hat")
+price  = 70

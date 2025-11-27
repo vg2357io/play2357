@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Structure" load_steps=3 format=3 uid="uid://0b89bd47wampp"]
+
+[ext_resource type="PackedScene" uid="uid://b7qxvksl6knlr" path="res://models/present-a-rectangle.glb" id="1_present_a_rectangle"]
+[ext_resource type="Script"     uid="uid://b4i7dfy6u3e8w" path="res://scripts/kenney_city_builder/structure.gd" id="2_structure"]
+
+[resource]
+script = ExtResource("2_structure")
+model  = ExtResource("1_present_a_rectangle")
+price  = 70

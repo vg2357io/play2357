@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Structure" load_steps=3 format=3 uid="uid://17cqmj3h5w72b"]
+
+[ext_resource type="PackedScene" uid="uid://bmrkmwcxdb7ds" path="res://models/cabin-roof-point.glb" id="1_cabin_roof_point"]
+[ext_resource type="Script"     uid="uid://b4i7dfy6u3e8w" path="res://scripts/kenney_city_builder/structure.gd" id="2_structure"]
+
+[resource]
+script = ExtResource("2_structure")
+model  = ExtResource("1_cabin_roof_point")
+price  = 70

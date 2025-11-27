@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Structure" load_steps=3 format=3 uid="uid://02o7iwn74ezf3"]
+
+[ext_resource type="PackedScene" uid="uid://8mnkaidjy6k5" path="res://models/kwanzaa-kinara-alternative.glb" id="1_kwanzaa_kinara_alternative"]
+[ext_resource type="Script"     uid="uid://b4i7dfy6u3e8w" path="res://scripts/kenney_city_builder/structure.gd" id="2_structure"]
+
+[resource]
+script = ExtResource("2_structure")
+model  = ExtResource("1_kwanzaa_kinara_alternative")
+price  = 70
